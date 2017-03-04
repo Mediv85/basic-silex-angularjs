@@ -1,2 +1,2 @@
-# basic-silex-angularjs
-Simple example of silex/angularjs basic project skeleton example
+# jwtExample
+Simple example of jwt token with different server and client
