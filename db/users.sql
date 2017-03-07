@@ -2,10 +2,7 @@
 -- version 4.6.5.2
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Creato il: Feb 28, 2017 alle 22:23
--- Versione del server: 10.1.21-MariaDB
--- Versione PHP: 7.1.1
+
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
