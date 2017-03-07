@@ -25,7 +25,7 @@ Create db from [SQL Dump](db/users.sql) on a db name *jwtexample*
 cd server/spring/
 mvn spring-boot:run
 ```
-By default on `localhost:8080/`
+By default on `http://localhost:8080/`
 
 ### Silex
 ```
@@ -34,7 +34,7 @@ composer install
 composer run
 ```
 
-By default on `localhost:8888/`
+By default on `http://localhost:8888/`
 
 
 
@@ -47,4 +47,4 @@ npm install
 ng serve
 ```
 
-By default on `localhost:4200/`
+By default on `http://localhost:4200/`
