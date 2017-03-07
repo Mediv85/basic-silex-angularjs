@@ -1,0 +1,38 @@
+<h1>
+  Test JWT
+</h1>
+<div>
+  <form (ngSubmit)="login()">
+    <select [(ngModel)]="selectedLocation" name="location" (change)="onLocationChange()">
+      <option *ngFor="let location of locations" [ngValue]="location" [selected]="location === selectedLocation">{{location}}</option>
+    </select><br>
+    <input type="text" placeholder="Username"
+      [(ngModel)]="loginCredentials.username" name="username" /><br>
+    <input type="password" placeholder="Password"
+      [(ngModel)]="loginCredentials.password" name="password" /><br>
+
+    <button type=”submit”>
+      Login
+    </button>
+  </form>
+
+  <button type="button" (click)="tellMeASecret()">
+    Tell me a Secret
+  </button>
+  <button type="button" (click)="anonymousCall()">
+    Anonymous call
+  </button>
+  <button type="button" (click)="resetAuth()">
+    Reset Autentication
+  </button>
+  <div>
+    <label style="font-weight: bold;">Autorization Token: </label><span>{{token}}</span>
+  </div>
+  <div>
+    <label style="font-weight: bold;">Secret: </label><span>{{secret}}</span>
+  </div>
+  <div>
+    <label style="font-weight: bold;">Anonymus: </label><span>{{anonymous}}</span>
+  </div>
+
+</div>
