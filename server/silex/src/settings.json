@@ -1,0 +1,8 @@
+{
+  "db_settings":{
+    "dbhost" : "localhost",
+    "dbname" : "jwtexample",
+    "user" : "root",
+    "password" : ""
+  }
+}
