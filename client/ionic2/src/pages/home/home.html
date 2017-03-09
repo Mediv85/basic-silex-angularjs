@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      jwtExample
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+
+<ion-content padding>
+  <form (ngSubmit)="login()">
+
+  <ion-list>
+
+    <ion-item>
+        <ion-label>Server</ion-label>
+        <ion-select [(ngModel)]="selectedLocation" name="location" (ngModelChange)="onLocationChange()">
+          <ion-option *ngFor="let location of locations" [value]="location" [selected]="location === selectedLocation">{{location}}</ion-option>
+        </ion-select>
+      </ion-item>
+
+  <ion-item>
+    <ion-label floating>Username</ion-label>
+    <ion-input [(ngModel)]="loginCredentials.username" name="username" type="text" value=""></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Password</ion-label>
+    <ion-input   [(ngModel)]="loginCredentials.password" name="password" type="password"></ion-input>
+  </ion-item>
+
+</ion-list>
+  <button ion-button full>Login</button>
+</form>
+
+<button ion-button color="danger" (click)="tellMeASecret()">Tell me a secret</button>
+<button ion-button color="secondary" (click)="anonymousCall()">Anonymous call</button>
+<button ion-button color="light" (click)="resetAuth()">Reset Authentication</button>
+
+<div>
+    <label style="font-weight: bold;">Autorization Token: </label><span>{{token}}</span>
+  </div>
+  <div>
+    <label style="font-weight: bold;">Secret: </label><span>{{secret}}</span>
+  </div>
+  <div>
+    <label style="font-weight: bold;">Anonymus: </label><span>{{anonymous}}</span>
+  </div>
+
+</ion-content>
