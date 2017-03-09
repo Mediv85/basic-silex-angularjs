@@ -56,3 +56,5 @@ npm install
 ionic state restore
 ionic serve
 ```
+
+By default on `http://localhost:8100/`
