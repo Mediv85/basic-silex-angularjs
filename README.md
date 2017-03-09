@@ -48,3 +48,11 @@ ng serve
 ```
 
 By default on `http://localhost:4200/`
+
+### Ionic2
+```
+cd clinet/ionic2
+npm install
+ionic state restore
+ionic serve
+```
