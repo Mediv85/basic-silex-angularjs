@@ -43,7 +43,6 @@ By default on `http://localhost:8888/`
 Default account
 
 Username: *admin*
-
 Password: *admin*
 
 ### Angular2
