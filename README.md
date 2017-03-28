@@ -40,6 +40,11 @@ By default on `http://localhost:8888/`
 
 ## Client
 
+Default account
+
+Username: admin
+Password: admin
+
 ### Angular2
 ```
 cd client/angular2
