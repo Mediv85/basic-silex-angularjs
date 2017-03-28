@@ -40,6 +40,11 @@ By default on `http://localhost:8888/`
 
 ## Client
 
+Default account
+
+Username: *admin*
+Password: *admin*
+
 ### Angular2
 ```
 cd client/angular2
@@ -48,3 +53,13 @@ ng serve
 ```
 
 By default on `http://localhost:4200/`
+
+### Ionic2
+```
+cd client/ionic2
+npm install
+ionic state restore
+ionic serve
+```
+
+By default on `http://localhost:8100/`
