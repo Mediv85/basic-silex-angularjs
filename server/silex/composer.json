@@ -19,9 +19,12 @@
       }
     },
   "require-dev": {
-    "phpunit/phpunit": "^6.0"
+    "phpunit/phpunit": "~5.7",
+    "symfony/browser-kit": "^3.2",
+    "symfony/css-selector": "^3.2"
   },
   "scripts": {
-        "run": "php -S localhost:8888 -t src api.php"
+        "run": "php -S localhost:8888 -t src api.php",
+        "test": "vendor/bin/phpunit"
     }
 }

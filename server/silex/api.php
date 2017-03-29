@@ -10,5 +10,4 @@ $app = new ApplicationJWT();
 
 $app->run();
 
-
 ?>
